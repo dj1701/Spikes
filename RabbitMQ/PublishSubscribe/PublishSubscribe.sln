@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spike.Publish", "Src\Spike.PublishSubscribe\Spike.Publish.csproj", "{95146756-ED92-4E37-9811-574FE01493C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spike.Subscribe", "Spike.Subscribe\Spike.Subscribe.csproj", "{0FE891D7-A268-475E-B36B-CE1392C525D5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spike.Subscribe", "Src\Spike.Subscribe\Spike.Subscribe.csproj", "{0FE891D7-A268-475E-B36B-CE1392C525D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

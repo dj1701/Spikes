@@ -35,7 +35,7 @@ namespace Spike.Subscribe
                 {
                     channel.QueueDeclare(_directQueue, true, false, false, null);
                     channel.ExchangeDeclare(_directExchange, "direct");
-                    channel.QueueBind(_directQueue, _fanoutExchange, "");
+                    //channel.QueueBind(_directQueue, _fanoutExchange, "");
 
                     var receiveEncodedMessage = channel.BasicGet(_directQueue, false);
                     receivedMessage = System.Text.Encoding.Unicode.GetString(receiveEncodedMessage.Body);
@@ -55,7 +55,7 @@ namespace Spike.Subscribe
                     channel.ExchangeDeclare(_directExchange, "fanout");
                     channel.QueueBind(_fanoutQueue, _directExchange, "");
 
-                    var encodedMessage = channel.BasicGet(_fanoutQueue, false);
+                    var encodedMessage = channel.BasicGet(_fanoutQueue, true);
                     message = System.Text.Encoding.Unicode.GetString(encodedMessage.Body);
                 }
 
